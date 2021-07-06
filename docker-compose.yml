@@ -16,7 +16,7 @@ services:
     ports:
       - "80:80"
   db:
-    image: mysql:5.7
+    image: mysql:latest
     restart: always
     environment:
       MYSQL_USER: 'user'
@@ -24,4 +24,4 @@ services:
       MYSQL_ROOT_PASSWORD: 'password'
     ports:
       - "3306"
-
+    command: --init-file /mysql/init.sql
