@@ -18,10 +18,12 @@ services:
   db:
     image: mysql:latest
     restart: always
+    command: --init-file /data/application/init.sql
+    volumes:
+        - ./mysql/init.sql:/data/application/init.sql
     environment:
       MYSQL_USER: 'user'
       MYSQL_PASSWORD: 'password'
       MYSQL_ROOT_PASSWORD: 'password'
     ports:
-      - "3306"
-    command: --init-file /mysql/init.sql
+      - "33061:3306"
