@@ -9,6 +9,7 @@ This is an issue tracking tool that allows for Agile project management and bug 
 * [Installation and Setup](#installation-and-setup)
 
 # Motivation
+The motivation of this project is to create a fully functional web-based tool that can track projects. This is of specific interest to me as I will benefit from a tool like this when managing my time in the my final year of university. 
 
 # Scope of Functionality
 
